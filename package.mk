@@ -1,0 +1,10 @@
+APP_NAME:=reddy
+
+UPSTREAM_GIT:=https://github.com/kevsmith/reddy.git
+UPSTREAM_REVISION:=dfdb5ef82dbf81
+RETAIN_ORIGINAL_VERSION:=true
+
+INCLUDE_DIRS+=$(CLONE_DIR)
+
+ORIGINAL_APP_FILE:=$(CLONE_DIR)/src/$(APP_NAME).app.src
+DO_NOT_GENERATE_APP_FILE=true
